@@ -1,8 +1,19 @@
+import { MainButton } from "../../../components/buttons/main-button";
+
 export function Hero(){
     return(
         <section id="hero" className="">
-            <div className="">
-                
+            <div className="max-w-[1280px] mx-auto px-[2%] flex flex-col-reverse lg:flex-row lg:justify-between justify-center items-center py-24 gap-8">
+                <div className="lg:w-3/5 flex flex-col lg:justify-start justify-center lg:items-start items-center gap-8">
+                    <h1 className="lg:text-start text-center font-medium xl:text-5xl md:text-4xl text-3xl">Quer ter um site  personalizado  desenvolvido por um <strong className="font-bold">programador profissional</strong> ?</h1>
+                    <p className="lg:text-start text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tellus ac urna placerat porttitor. Duis vestibulum ultrices quam et ultrices. Nulla lobortis nunc in metus. </p>
+                    <MainButton 
+                        textButton={'Fazer um orçamento'}
+                    />
+                </div>
+                <div className="lg:w-2/5">
+                    <img src="icons/hero/hero-image.svg" alt="" />
+                </div>
             </div>
         </section>
     )
