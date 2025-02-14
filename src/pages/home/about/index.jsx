@@ -6,7 +6,7 @@ export function About(){
             <div className="max-w-[1280px] mx-auto px-[2%] pb-24 flex flex-col lg:flex-row items-center">
                 <img className="xl:h-[480px] lg:h-[400px] " src="images/about/image.png" alt="" />
                 <div className="flex flex-col items-start gap-4">
-                    <h2 className="text-black md:text-5xl text-4xl text-center">O desenvolvedor ideal para o seu projeto web</h2>
+                    <h2 className="text-black md:text-5xl text-4xl text-center md:text-start">O desenvolvedor ideal para o seu projeto web</h2>
                     <div className="flex gap-8 py-4 lg:max-w-[640px] ">
                         <div className="h-2/2 w-2 bg-blue"></div>
                         <h3 className="font-extrabold text-lg md:text-xl text-black leading-5">Com estratégias digitais inovadoras e personalizadas, construímos uma história de crescimento e realização ao longo dos anos.</h3>
