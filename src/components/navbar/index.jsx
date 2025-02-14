@@ -10,12 +10,12 @@ export function Navbar(){
         
     }
     return(
-        <nav id="navbar" className="w-full ">
-            <div className="max-w-[1280px] mx-auto flex py-4  px-[2%] w-full justify-between items-center">
+        <nav id="navbar" className="w-full shadow-lg">
+            <div className="max-w-[1280px] mx-auto flex py-4  px-[2%] w-full justify-between  items-center ">
                 <div>
                     <img src="icons/Logo.svg" alt="" />
                 </div>
-                <div className="md:flex  hidden gap-8 ">
+                <div className="md:flex  hidden gap-8 items-center">
                     <a className="text-lg text-black font-medium" href="">Sobre mim</a>
                     <a className="text-lg text-black font-medium" href="">Projetos</a>
                     <MainButton 
