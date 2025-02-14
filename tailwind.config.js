@@ -43,7 +43,7 @@ export default {
       colors: {
         'pink': '#BD71FF',
         'purple': '#6A6CFF',
-        'gray': '#262626',
+        'gray': '#828282',
         'dark-gray': '#3C3C3C',        
         'black': '#262626',
         'white': '#fafafa',
