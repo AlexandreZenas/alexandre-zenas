@@ -12,7 +12,7 @@ export function Footer(){
                 <FooterStructure.Logo image={'icons/Logo-light.svg'} linkLogo={'#'}/>
                 <FooterStructure.Medias>
                     <FooterStructure.Media image={'icons/footer/email.svg'} mediaLink={'mailto:contato@alexandrezenas.com'} />
-                    <FooterStructure.Media image={'icons/footer/whatsapp.svg'} mediaLink={''} />
+                    <FooterStructure.Media image={'icons/footer/whatsapp.svg'} mediaLink={'https://wa.me/5521995983041'} />
                     <FooterStructure.Media image={'icons/footer/linkedin.svg'} mediaLink={'https://www.linkedin.com/in/alexandre-zenas-819b3163/'} />
                     <FooterStructure.Media image={'icons/footer/github.svg'} mediaLink={'https://github.com/AlexandreZenas'} />
                 </FooterStructure.Medias>
