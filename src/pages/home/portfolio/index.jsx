@@ -17,6 +17,7 @@ export function Portfolio(){
                     <p className="font-medium text-sm text-[#575757] pt-4">O site conta com mais de 10 páginas, incluindo Home, Portfólio, Sobre nós e serviços. </p>
                     <p className="font-medium text-sm text-[#575757] py-4">Eu criei todo o design e desenvolvi o site utilizando react e tailwindcss como principais tecnologias</p>
                     <LinkButton 
+                        target={"_blanc"}
                         textLink={'fbchaves.com.br'}
                         link={'https://fb-chaves.vercel.app/'}
                     />
@@ -32,6 +33,7 @@ export function Portfolio(){
                     <p className="font-medium text-sm text-[#575757] pt-4">Oferecemos serviços digitais como desenvolvimento de landing pages, websites, criação e gestão de anúncios e  campanhas.</p>
                     <p className="font-medium text-sm text-[#575757] py-4">Este é um projeto completo, que inclue animações suaves, design personalizado e formulário para envio de dados. </p>
                     <LinkButton 
+                        target={"_blanc"}
                         textLink={'ImpulseOnAgency.com'}
                         link={'https://www.ImpulseOnAgency.com'}
                     />
@@ -46,6 +48,7 @@ export function Portfolio(){
                     <p className="font-medium text-sm text-[#575757] pt-4">A silver glass é uma vidraçaria com mais de 10 anos de mercado.  Seus principais serviços são: Envidraçamento de sacadas, blindex, espelhos personalizados e box para banheiro. </p>
                     <p className="font-medium text-sm text-[#575757] py-4">Criei todo o design da página focado na conversão de leads, e desenvolvi todo o projeto usando tecnologicas como react e vite.</p>
                     <LinkButton 
+                        target={"_blanc"}
                         textLink={'vidraçariasilverglass.com.br'}
                         link={'https://xn--vidraariasilverglass-70b.com.br/'}
                     />
