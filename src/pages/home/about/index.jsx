@@ -13,7 +13,7 @@ export function About(){
                     </div>
                     <p className="text-black">Sou desenvolvedor independente com ampla experiência em projetos personalizados para empresas no Rio de Janeiro, atuando na criação de soluções digitais que atendem às necessidades específicas de cada cliente.</p>
                     <p className="text-black">Engenheiro de software instusiasta por tecnologia com familiaridade em Java, Spring, Javascript, Typescript, Node, React, Tailwind, SQL, MySQL e PostgreSQL. Sou apaixonado por trabalhar em projetos significativos que tenham um impacto positivo na vida das pessoas. Tenho experiência prática trabalhando no desenvolvimento de aplicações web e na criação e integração de APIs.</p>
-                    <LinkButton  link={''} textLink={'Entre em contato'}/>
+                    <LinkButton  link={'#Contact'} textLink={'Entre em contato'}/>
                 </div>
             </div>
         </section>

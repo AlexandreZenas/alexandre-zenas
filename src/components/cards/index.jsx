@@ -9,7 +9,7 @@ export function Card({title, text, link, textLink, imgPath}){
                     <h2 className="font-medium xl:text-3xl lg:text-2xl">{title}</h2>
                     <p className="text-gray">{text}</p>
                 </div>
-                <LinkButton  link={''} textLink={'saiba mais'}/>
+                <LinkButton link={'#Contact'} textLink={'Solicitar orçamento '}/>
             </div>
         </div>
     )
