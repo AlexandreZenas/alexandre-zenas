@@ -32,14 +32,15 @@ export function Navbar(){
                                 <img src="icons/navbar/close.svg" alt="" onClick={toggleMenu}/>
                             </div>
                             <div className="w-full h-[2px] bg-blue"></div>
-                            <div className="flex flex-col w-full h-auto gap-4 justify-center items-center py-8">
+                            <div className="flex flex-col w-full h-auto gap-6  py-8">
                                 <a className="text-lg text-white font-medium" href="">SOBRE MIM</a>
                                 <a className="text-lg text-white font-medium" href="">PROJETOS</a>
-                            </div>
-                            <MainButton 
+                                <MainButton 
+                                    styleButton={'my-4 py-4 px-6 rounded-md text-center'}
                                     textButton={'Fazer um orçamento'}
-                                    // linkButton={'https://wa.me/5521995983041'}
+                                    linkButton={'#Contact'}
                                 />
+                            </div>
                         </div>
                     </div>
                 </div>
