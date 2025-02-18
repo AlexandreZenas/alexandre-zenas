@@ -9,6 +9,7 @@ export function Hero(){
                     <p className="lg:text-start text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tellus ac urna placerat porttitor. Duis vestibulum ultrices quam et ultrices. Nulla lobortis nunc in metus. </p>
                     <MainButton 
                         textButton={'Fazer um orçamento'}
+                        linkButton={'#Contact'}
                     />
                 </div>
                 <div className="lg:w-2/5">

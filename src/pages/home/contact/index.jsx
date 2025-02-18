@@ -13,6 +13,7 @@ export function Contact(){
                     <MainButton 
                         styleButton={'font-light py-3 px-8'}
                         textButton={'contato@alexandrezenas.com'}
+                        linkButton={'mailto:contato@alexandrezenas.com'}
                     />
                 </div>
                 <Form.Root>

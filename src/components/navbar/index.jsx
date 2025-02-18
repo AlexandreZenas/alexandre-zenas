@@ -16,11 +16,11 @@ export function Navbar(){
                     <img src="icons/Logo.svg" alt="" />
                 </div>
                 <div className="md:flex  hidden gap-8 items-center">
-                    <a className="text-lg text-black font-medium" href="">Sobre mim</a>
-                    <a className="text-lg text-black font-medium" href="">Projetos</a>
+                    <a className="text-lg text-black font-medium" href="#About">Sobre mim</a>
+                    <a className="text-lg text-black font-medium" href="#Portfolio">Projetos</a>
                     <MainButton 
                         textButton={'Fazer um orçamento'}
-                        // linkButton={'https://wa.me/5521995983041'}
+                        linkButton={'#Contact'}
                     />
                 </div>
                 <div className="block  md:hidden gap-4 ">
