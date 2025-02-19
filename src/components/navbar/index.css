@@ -1,0 +1,4 @@
+.no-scroll {
+    overflow: hidden; /* Remove o scroll vertical e horizontal */
+    height: 100%; /* Garante que o conteúdo não exceda a altura da tela */
+}

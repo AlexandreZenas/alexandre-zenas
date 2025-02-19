@@ -1,11 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { MainButton } from "../buttons/main-button";
-
+import './index.css'
 export function Navbar(){
     const [menuOpen, setmenuOpen] = useState(false);
 
     function toggleMenu() {
         setmenuOpen(!menuOpen);
+        if (!menuOpen) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
         console.log("click");
     }
 
@@ -32,14 +37,16 @@ export function Navbar(){
         window.addEventListener('scroll', () => {   
             handleScroll()
         })
+
+        
     }, []);  
 
     return(
         <nav id="navbar" className={` shadow-lg  w-full  transition-all duration-500  z-50 bg-white ${boolean ? 'fixed translate-y-0' : 'fixed -translate-y-96' } `} ref={navbarRef}>
             <div className="max-w-[1280px] relative mx-auto flex py-4  px-[2%] w-full justify-between  items-center ">
-                <div>
+                <a href="#Hero">
                     <img src="icons/Logo.svg" alt="" />
-                </div>
+                </a>
                 <div className="md:flex  hidden gap-8 items-center">
                     <a className="text-lg text-black font-medium" href="#About">Sobre mim</a>
                     <a className="text-lg text-black font-medium" href="#Portfolio">Projetos</a>
@@ -58,13 +65,16 @@ export function Navbar(){
                             </div>
                             <div className="w-full h-[2px] bg-blue"></div>
                             <div className="flex flex-col w-full h-auto gap-6  py-8">
-                                <a className="text-lg text-white font-medium" href="">SOBRE MIM</a>
-                                <a className="text-lg text-white font-medium" href="">PROJETOS</a>
-                                <MainButton 
-                                    styleButton={'my-4 py-4 px-6 rounded-md text-center'}
-                                    textButton={'Fazer um orçamento'}
-                                    linkButton={'#Contact'}
-                                />
+                                <a className="text-lg text-white font-medium" href="#About" onClick={toggleMenu}>SOBRE MIM</a>
+                                <a className="text-lg text-white font-medium" href="#Portfolio" onClick={toggleMenu}>PROJETOS</a>
+                                <div onClick={toggleMenu}>
+                                    <MainButton 
+                                        
+                                        styleButton={'my-4 py-4 px-6 rounded-md text-center'}
+                                        textButton={'Fazer um orçamento'}
+                                        linkButton={'#Contact'}
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className='absolute h-full w-1/6 right-0' onClick={toggleMenu}>
