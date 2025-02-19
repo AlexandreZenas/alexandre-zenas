@@ -18,7 +18,7 @@ export function Portfolio(){
         }, []);  
         
     return(
-        <section id="Portfolio" className="px-[2%] py-24" ref={rootRef}>
+        <section id="Portfolio" className="min-h-[2500px] px-[2%] py-24" ref={rootRef}>
             <div className={`${ boolean ? 'flex' : ' hidden'} max-w-[1280px] mx-auto flex flex-col w-full gap-4`}>
                 <h1 className="animate-elementIn text-black md:text-5xl text-4xl font-medium">Meus Projetos</h1>
                 <div className="animate-elementIn w-full h-[2px] bg-[#DBDBDB]"></div>

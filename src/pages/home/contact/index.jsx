@@ -17,7 +17,7 @@ export function Contact(){
         })
     }, []);  
     return(
-        <section id="Contact" className="px-[2%] py-24 " ref={rootRef}>
+        <section id="Contact" className="min-h-screen px-[2%] py-20 " ref={rootRef}>
             <div className={`${ boolean ? 'flex' : ' hidden'} max-w-[1280px] mx-auto flex-col lg:flex-row  gap-20 lg:gap-12 `}>
                 <div className="flex flex-col items-start gap-8 lg:w-1/2 w-full">
                     <h4 className="animate-elementInLow text-blue font-medium text-sm tracking-widest">Agende agora</h4>
