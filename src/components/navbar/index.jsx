@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MainButton } from "../buttons/main-button";
 
 export function Navbar(){
@@ -7,10 +7,35 @@ export function Navbar(){
     function toggleMenu() {
         setmenuOpen(!menuOpen);
         console.log("click");
-        
     }
+
+    const navbarRef = useRef(null)
+    const [boolean, setBoolean] = useState(true);
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+        
+        function handleScroll(){
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+                setBoolean(false)
+                console.log('down');
+                
+            } else if (currentScrollY < lastScrollY) {
+                setBoolean(true)
+                console.log('up');
+                
+            }
+            lastScrollY = currentScrollY;
+        }
+
+        window.addEventListener('scroll', () => {   
+            handleScroll()
+        })
+    }, []);  
+
     return(
-        <nav id="navbar" className="w-full fixed shadow-lg animate-slideTop1 ">
+        <nav id="navbar" className={` shadow-lg  w-full  transition-all duration-500  z-50 bg-white ${boolean ? 'fixed translate-y-0' : 'fixed -translate-y-96' } `} ref={navbarRef}>
             <div className="max-w-[1280px] relative mx-auto flex py-4  px-[2%] w-full justify-between  items-center ">
                 <div>
                     <img src="icons/Logo.svg" alt="" />

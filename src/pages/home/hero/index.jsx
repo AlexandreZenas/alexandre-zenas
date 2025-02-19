@@ -13,7 +13,7 @@ export function Hero(){
                         linkButton={'#Contact'}
                     />
                 </div>
-                <div className="lg:w-2/5">
+                <div className="lg:w-2/5 animate-slideLeft2">
                     <img src="icons/hero/hero-image.svg" alt="" />
                 </div>
             </div>
