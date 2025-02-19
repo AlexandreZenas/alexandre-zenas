@@ -1,17 +1,30 @@
 import { MainButton } from "../../../components/buttons/main-button";
 import { Form } from "../../../components/form";
-
+import { useEffect, useRef, useState } from "react";
 
 export function Contact(){
+    const rootRef = useRef(null);
+    const [boolean, setBoolean] = useState(true);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            const positionElementY = rootRef.current?.getBoundingClientRect().top; 
+            if(positionElementY < screen.height * 0.7){
+                setBoolean(true);  
+            }else if(positionElementY > screen.height * 0.7){
+                setBoolean(false);            
+            }            
+        })
+    }, []);  
     return(
-        <section id="Contact" className="px-[2%]">
-            <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row py-24 gap-20 lg:gap-12 ">
+        <section id="Contact" className="px-[2%] py-24 " ref={rootRef}>
+            <div className={`${ boolean ? 'flex' : ' hidden'} max-w-[1280px] mx-auto flex-col lg:flex-row  gap-20 lg:gap-12 `}>
                 <div className="flex flex-col items-start gap-8 lg:w-1/2 w-full">
-                    <h4 className="text-blue font-medium text-sm tracking-widest">Agende agora</h4>
-                    <h2 className="text-black md:text-5xl text-4xl md:text-start">Preencha o formulário para receber uma consultoria gratuita</h2>
-                    <p className="text-[#828282]">Basta preencher o formulário e o nosso time de experts entrará em contato com você para conversar sobre o seu negócio. Leva menos de um minuto para preencher!</p>
+                    <h4 className="animate-elementInLow text-blue font-medium text-sm tracking-widest">Agende agora</h4>
+                    <h2 className="animate-elementIn text-black md:text-5xl text-4xl md:text-start">Preencha o formulário para receber uma consultoria gratuita</h2>
+                    <p className="animate-elementInVeryLow text-[#828282]">Basta preencher o formulário e o nosso time de experts entrará em contato com você para conversar sobre o seu negócio. Leva menos de um minuto para preencher!</p>
                     <MainButton 
-                        styleButton={'font-light py-3 px-8'}
+                        styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}
                         textButton={'contato@alexandrezenas.com'}
                         linkButton={'mailto:contato@alexandrezenas.com'}
                     />

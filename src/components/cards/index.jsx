@@ -1,8 +1,9 @@
+import { twMerge } from "tailwind-merge";
 import { LinkButton } from "../buttons/linkButton";
 
-export function Card({title, text, link, textLink, imgPath}){
+export function Card({title, text, link, textLink, imgPath, cardStyle}){
     return(
-        <div className="flex lg:w-[360px] xl:w-1/3  gap-4 justify-start items-start bg-[#fff] px-8 py-12 shadow-xl">
+        <div className={twMerge("flex lg:w-[360px] xl:w-1/3  gap-4 justify-start items-start bg-[#fff] px-8 py-12 shadow-xl", cardStyle)}>
             <img src={imgPath} alt="" />
             <div className="flex flex-col h-full justify-between items-start gap-8">
                 <div className="flex flex-col gap-4">

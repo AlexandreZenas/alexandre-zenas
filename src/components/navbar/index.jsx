@@ -10,8 +10,8 @@ export function Navbar(){
         
     }
     return(
-        <nav id="navbar" className="w-full shadow-lg">
-            <div className="max-w-[1280px] mx-auto flex py-4  px-[2%] w-full justify-between  items-center ">
+        <nav id="navbar" className="w-full fixed shadow-lg animate-slideTop1 ">
+            <div className="max-w-[1280px] relative mx-auto flex py-4  px-[2%] w-full justify-between  items-center ">
                 <div>
                     <img src="icons/Logo.svg" alt="" />
                 </div>
@@ -23,9 +23,9 @@ export function Navbar(){
                         linkButton={'#Contact'}
                     />
                 </div>
-                <div className="block  md:hidden gap-4 ">
+                <div className="flex md:hidden gap-4 ">
                     <img src="icons/navbar/menu.svg" alt="" onClick={toggleMenu}/>
-                    <div className={`fixed h-screen w-[100vw] bg-[rgba(15,15,15,0.4)] top-0 ${menuOpen ? '-left-[0]  duration-[.75s] ' : '-left-[200vw] duration-[1s] delay-500'} `} onClick={toggleMenu}>
+                    <div className={`${menuOpen ? '-left-[0]  duration-[.75s] ' : '-left-[200vw] duration-[1s] delay-500'} fixed h-screen  w-[100vw] bg-[rgba(15,15,15,0.4)] top-0 `} >
                         <div className={`${menuOpen ? ' -left-[0]  duration-[1s] delay-500' : ' -left-[200vw] duration-[1s] '} absolute h-full w-5/6 bg-black items-center flex flex-col px-8 py-8 gap-8`}>
                             <div className="flex justify-between w-full">
                                 <img className="w-1/3" src="icons/Logo-light.svg" alt="" />
@@ -41,6 +41,8 @@ export function Navbar(){
                                     linkButton={'#Contact'}
                                 />
                             </div>
+                        </div>
+                        <div className='absolute h-full w-1/6 right-0' onClick={toggleMenu}>
                         </div>
                     </div>
                 </div>

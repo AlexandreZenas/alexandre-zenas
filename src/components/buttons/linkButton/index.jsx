@@ -1,6 +1,8 @@
-export function LinkButton({link, textLink, target }){
+import { twMerge } from "tailwind-merge";
+
+export function LinkButton({link, textLink, target, buttonStyle}){
     return(
-    <div className="wrapper-line">
+    <div className={twMerge(`wrapper-line `, buttonStyle)}>
         <a className="inline-block text-base font-medium leading-loose text-blue" href={link} target={target} >{textLink}</a>
         <img className="inline-block  pl-4" src="icons/cards/arrow.svg" alt="" />
         <div className="w-full h-[2px] bg-[#8ab7f1] rounded-3xl">
