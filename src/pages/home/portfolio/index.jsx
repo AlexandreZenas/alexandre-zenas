@@ -30,7 +30,7 @@ export function Portfolio(){
                     textTwo={'O site conta com mais de 10 páginas, incluindo Home, Portfólio, Sobre nós e serviços.'}
                     textTree={'Criei todo o design e desenvolvi o site utilizando react e tailwindcss como principais tecnologias'}
                     textLink={'fbchaves.com.br'}
-                    link={'https://www.fbchaves.com.br'}
+                    link={'https://fb-chaves.vercel.app/'}
                     animateImage={'animate-slideRight1'}
                     imagesPath={'images/projects/fbchaves.svg'}
                 />
