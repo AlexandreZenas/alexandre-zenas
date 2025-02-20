@@ -14,13 +14,13 @@ export function Benefits(){
                     text={'Ter um site permite que você tenha presença na internet. Isso é crucial para os dias de hoje, já que muitas pessoas procuram por produtos e serviços online antes de  fazer uma compra.'}
                 />
                 <Card 
-                    animateCard={'animate-elementInLow'}
+                    animateCard={'lg:animate-elementInLow  animate-elementIn'}
                     imgPath={"icons/cards/search.svg"}
                     title={'No topo das pesquisas'}
                     text={'Utilizando técnicas de SEO e anúncios para aumentar a visibilidade nos mecanismos de busca, o fluxo de usuários e a taxa de conversão do site aumente exponencialmente.'}
                 />
                                     <Card 
-                    animateCard={'animate-elementInVeryLow'}
+                    animateCard={'lg:animate-elementInVeryLow animate-elementIn'}
                     imgPath={"icons/cards/laptop.svg"}
                     title={'Um programador ao seu dispor'}
                     text={'Em nossa consultoria juntos Desenvolvemos  estratégias eficazes e personalizadas identificando oportunidades até a execução de campanhas eficazes.'}
