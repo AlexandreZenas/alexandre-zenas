@@ -5,7 +5,7 @@ export function Benefits(){
 
 
     return(
-        <section id="Benefits" className=" min-h-screen py-24" >
+        <section id="Benefits" className=" py-24" >
             <div className={`max-w-[1280px] mx-auto px-[2%]  flex-col lg:flex-row lg:flex-nowrap flex-wrap flex   gap-8 `}>
                 <Card 
                     animateCard={'animate-elementIn'}
@@ -19,7 +19,7 @@ export function Benefits(){
                     title={'No topo das pesquisas'}
                     text={'Utilizando técnicas de SEO e anúncios para aumentar a visibilidade nos mecanismos de busca, o fluxo de usuários e a taxa de conversão do site aumente exponencialmente.'}
                 />
-                                    <Card 
+                    <Card 
                     animateCard={'lg:animate-elementInVeryLow animate-elementIn'}
                     imgPath={"icons/cards/laptop.svg"}
                     title={'Um programador ao seu dispor'}
