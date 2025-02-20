@@ -20,7 +20,7 @@ export function Footer(){
             </div>
             <div className="bg-blue w-[100%] mx-auto h-[2px]"></div>
             <FooterStructure.Content>
-                <span className="text-lg text-white">© 2025 <strong>Alexandre zenas</strong> - Todos os direitos reservados</span>
+                <span className="text-center lg:text-start text-lg text-white">© 2025 <strong>Alexandre zenas</strong> - Todos os direitos reservados</span>
                 <a className="text-lg text-white" href="mailto:contato@alexandrezenas.com">contato@alexandrezenas.com</a>
                 {/* <FooterStructure.Text textStyle={'text-white lg:w-1/2 text-center'} text={'© 2024 ImpulseOn Agency - Todos os direitos reservados'} />
                 <FooterStructure.Text textStyle={'text-white lg:w-1/2 text-center'} text={'contato@impulseonagency.com'} /> */}
