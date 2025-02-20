@@ -17,7 +17,7 @@ export function Benefits(){
     }, []);  
 
     return(
-        <section id="Benefits" className="py-24" ref={rootRef}>
+        <section id="Benefits" className=" min-h-screen py-24" ref={rootRef}>
             <div className={`max-w-[1280px] mx-auto px-[2%]  flex-col lg:flex-row lg:flex-nowrap flex-wrap    gap-8 ${ boolean ? 'flex' : ' hidden'}`}>
                 <Card 
                     cardStyle={'animate-elementIn'}
