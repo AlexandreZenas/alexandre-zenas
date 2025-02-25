@@ -50,7 +50,8 @@ export function About(){
                     <p className={`${ boolean ? 'animate-slideTop5 ' : 'opacity-0'} text-black `}>Engenheiro de software instusiasta por tecnologia com familiaridade em Java, Spring, Javascript, Typescript, Node, React, Tailwind, SQL, MySQL e PostgreSQL. Sou apaixonado por trabalhar em projetos significativos que tenham um impacto positivo na vida das pessoas. Tenho experiência prática trabalhando no desenvolvimento de aplicações web e na criação e integração de APIs.</p>
                     <div className={`${ boolean ? 'animate-slideTop6 ' : 'opacity-0'}`}>
                         <LinkButton
-                            link={'#Contact'} 
+                            target={'_blank'}
+                            link={'https://wa.me/5521995983041'} 
                             textLink={'Entre em contato'}
                         />
                     </div>                    

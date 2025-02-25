@@ -23,11 +23,24 @@ export function Contact(){
                     <h4 className="animate-elementInLow text-blue font-medium text-sm tracking-widest">Agende agora</h4>
                     <h2 className="animate-elementIn text-black md:text-5xl text-4xl md:text-start">Preencha o formulário para receber uma consultoria gratuita</h2>
                     <p className="animate-elementInVeryLow text-[#828282]">Basta preencher o formulário e o nosso time de experts entrará em contato com você para conversar sobre o seu negócio. Leva menos de um minuto para preencher!</p>
-                    <MainButton 
-                        styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}
-                        textButton={'contato@alexandrezenas.com'}
-                        linkButton={'mailto:contato@alexandrezenas.com'}
-                    />
+                    <div className="flex gap-4">
+                        <MainButton
+                            styleBTN={'flex gap-2 items-'}
+                            imgPath={'icons/contact/email.svg'}
+                            target={'_blank'}
+                            styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}
+                            textButton={'contato@alexandrezenas.com'}
+                            linkButton={'mailto:contato@alexandrezenas.com'}
+                        />
+                        <MainButton
+                            styleBTN={'flex gap-2 items-'}                          
+                            imgPath={'icons/contact/whatsapp.svg'}
+                            target={'_blank'}
+                            styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}
+                            textButton={'whatsapp'}
+                            linkButton={'https://wa.me/5521995983041'}
+                        />
+                    </div>
                 </div>
                 <Form.Root>
                 <Form.Input name={'user_name'} inputStyle={'animate-elementInLow'}  labelTitle={`Nome completo`} placeholderInput={`Digite seu nome ...`} inputType={`text`} />

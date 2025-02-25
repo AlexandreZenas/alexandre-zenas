@@ -9,8 +9,9 @@ export function Hero(){
                     <p className="animate-slideTop2  lg:text-start text-center text-[#828282]">Tenha um site adaptado às necessidades da sua empresa – feito sob medida por um desenvolvedor web e destaque o seu negócio na internet!</p>
                     <MainButton 
                         styleButton={'animate-slideTop3'}
+                        target={'_blank'}
                         textButton={'Fazer um orçamento'}
-                        linkButton={'#Contact'}
+                        linkButton={'https://wa.me/5521995983041'}
                     />
                 </div>
                 <div className="lg:w-2/5 animate-slideRight1">
