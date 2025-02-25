@@ -11,7 +11,6 @@ export function Navbar(){
         } else {
             document.body.classList.remove("no-scroll");
         }
-        console.log("click");
     }
 
     const navbarRef = useRef(null)
@@ -24,21 +23,16 @@ export function Navbar(){
             const currentScrollY = window.scrollY;
             if (currentScrollY > lastScrollY) {
                 setBoolean(false)
-                console.log('down');
                 
             } else if (currentScrollY < lastScrollY) {
-                setBoolean(true)
-                console.log('up');
-                
+                setBoolean(true)                
             }
             lastScrollY = currentScrollY;
         }
 
         window.addEventListener('scroll', () => {   
             handleScroll()
-        })
-
-        
+        })        
     }, []);  
 
     return(
@@ -47,15 +41,17 @@ export function Navbar(){
                 <a href="#Hero">
                     <img src="icons/Logo.svg" alt="" />
                 </a>
-                <div className="md:flex  hidden gap-8 items-center">
+                <div className="lg:flex  hidden gap-8 items-center">
                     <a className="text-lg text-black font-medium" href="#About">Sobre mim</a>
                     <a className="text-lg text-black font-medium" href="#Portfolio">Projetos</a>
+                    <a className="text-lg text-black font-medium" href="#Contact">Contato</a>
                     <MainButton 
+                        target={'_blank'}
                         textButton={'Fazer um orçamento'}
-                        linkButton={'#Contact'}
+                        linkButton={'https://wa.me/5521995983041'}
                     />
                 </div>
-                <div className="flex md:hidden gap-4 ">
+                <div className="flex lg:hidden gap-4 ">
                     <img src="icons/navbar/menu.svg" alt="" onClick={toggleMenu}/>
                     <div className={`${menuOpen ? '-left-[0]  duration-[.75s] ' : '-left-[200vw] duration-[1s] delay-500'} fixed h-screen  w-[100vw] bg-[rgba(15,15,15,0.4)] top-0 `} >
                         <div className={`${menuOpen ? ' -left-[0]  duration-[1s] delay-500' : ' -left-[200vw] duration-[1s] '} absolute h-full w-5/6 bg-black items-center flex flex-col px-8 py-8 gap-8`}>
@@ -67,12 +63,12 @@ export function Navbar(){
                             <div className="flex flex-col w-full h-auto gap-6  py-8">
                                 <a className="text-lg text-white font-medium" href="#About" onClick={toggleMenu}>SOBRE MIM</a>
                                 <a className="text-lg text-white font-medium" href="#Portfolio" onClick={toggleMenu}>PROJETOS</a>
+                                <a className="text-lg text-white font-medium pb-4" href="#Contact" onClick={toggleMenu}>CONTATO</a>
                                 <div onClick={toggleMenu}>
-                                    <MainButton 
-                                        
-                                        styleButton={'my-4 py-4 px-6 rounded-md text-center'}
+                                    <MainButton                                         
+                                        styleButton={'py-4 px-6 rounded-md text-center'}
                                         textButton={'Fazer um orçamento'}
-                                        linkButton={'#Contact'}
+                                        linkButton={'https://wa.me/5521995983041'}
                                     />
                                 </div>
                             </div>
