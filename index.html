@@ -19,7 +19,26 @@
 
       gtag('config', 'AW-16886265673');
     </script>
-    <!-- Event snippet for Solicitar cotação conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-16886265673/TPucCLDP7qAaEMnu__M-', 'value': 1.0, 'currency': 'BRL' }); </script>
+    
+    <!-- Event snippet for whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-16886265673/G3sDCL7qg6MaEMnu__M-',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+  
   </head>
   <body>
     <div id="root"></div>
