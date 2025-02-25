@@ -26,6 +26,7 @@ export function Contact(){
                     <div className="flex gap-4">
                         <MainButton
                             styleBTN={'flex gap-2 items-'}
+                            imgAlt={'email'}
                             imgPath={'icons/contact/email.svg'}
                             target={'_blank'}
                             styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}
@@ -33,7 +34,8 @@ export function Contact(){
                             linkButton={'mailto:contato@alexandrezenas.com'}
                         />
                         <MainButton
-                            styleBTN={'flex gap-2 items-'}                          
+                            styleBTN={'flex gap-2 items-'}       
+                            imgAlt={'whatsapp'}                   
                             imgPath={'icons/contact/whatsapp.svg'}
                             target={'_blank'}
                             styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}

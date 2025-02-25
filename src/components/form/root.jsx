@@ -28,7 +28,7 @@ export function FormRoot ({children, formStyle, formAction}){
             <p className={twMerge(`${boolean ? 'flex' : 'hidden'} transition-all items-center text-sm font-medium leading-[30px] tracking-[2px] text-blue `) }>
                 {"mensagem enviada !"}
             </p>
-            <TextButton textStyle={`animate-elementInVeryLow ${boolean ? ' hidden' : 'flex'}`} text={'Enviar mensagem'}></TextButton>
+            <TextButton link={'#'} textStyle={`animate-elementInVeryLow ${boolean ? ' hidden' : 'flex'}`} text={'Enviar mensagem'}></TextButton>
         </form>
     )
 }
