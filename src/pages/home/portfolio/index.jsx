@@ -32,7 +32,7 @@ export function Portfolio(){
                     textLink={'fbchaves.com.br'}
                     link={'https://fb-chaves.vercel.app/'}
                     animateImage={'animate-slideRight1'}
-                    imagesPath={'images/projects/fbchaves.svg'}
+                    imagesPath={'images/projects/fbchaves.png'}
                 />
                 <Projects 
                     styleProjects={'lg:flex-row-reverse'}
@@ -45,7 +45,7 @@ export function Portfolio(){
                     textLink={'impulseonagency.com'}
                     link={'https://www.impulseonagency.com'}
                     animateImage={'animate-slideLeft1'}
-                    imagesPath={'images/projects/impulseon.svg'}
+                    imagesPath={'images/projects/impulseon.png'}
                 />
                 <Projects 
                     title={'Vidraçaria Silver Glass'}
@@ -57,7 +57,7 @@ export function Portfolio(){
                     textLink={'vidraçariasilverglass.com.br'}
                     link={'https://xn--vidraariasilverglass-70b.com.br/'}
                     animateImage={'animate-slideRight1'}
-                    imagesPath={'images/projects/silverglass.svg'}
+                    imagesPath={'images/projects/silverglass.png'}
                 />
 {/* <Projects      
 <Projects 
