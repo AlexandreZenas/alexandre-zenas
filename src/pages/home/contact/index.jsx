@@ -30,8 +30,8 @@ export function Contact(){
                             imgPath={'icons/contact/email.svg'}
                             target={'_blank'}
                             styleButton={'font-light py-3 px-8 animate-elementInMaxLow'}
-                            textButton={'contato@alexandrezenas.com'}
-                            linkButton={'mailto:contato@alexandrezenas.com'}
+                            textButton={'alexandrezenas@gmail.com'}
+                            linkButton={'mailto:alexandrezenas@gmail.com'}
                         />
                         <MainButton
                             styleBTN={'flex gap-2 items-'}       
