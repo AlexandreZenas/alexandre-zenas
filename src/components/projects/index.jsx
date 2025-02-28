@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { twMerge } from "tailwind-merge";
 import { LinkButton } from "../buttons/linkButton";
+import { ProjectsButton } from "./linkButton";
 
 export function Projects({styleProjects, imagesPath, styleCarousel, title, subTitle, date, textOne, textTwo, textTree, link, textLink, animateImage}){
     
@@ -43,7 +44,7 @@ export function Projects({styleProjects, imagesPath, styleCarousel, title, subTi
                     <p className={`${ boolean ? 'animate-slideTop4' : 'opacity-0'} font-medium text-sm text-[#575757] pt-4`}>{textTwo}</p>
                     <p className={`${ boolean ? 'animate-slideTop5' : 'opacity-0'} font-medium text-sm text-[#575757] py-4`}>{textTree}</p>
                     <div className={`${ boolean ? 'animate-slideTop6' : 'opacity-0'}`}>
-                        <LinkButton
+                        <ProjectsButton
                             target={"_blanc"}
                             textLink={textLink}
                             link={link}
